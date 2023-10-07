@@ -1,8 +1,49 @@
+
+
 *{
 font-family: 'Roboto', sans-serif;
+
 }
 
-.icon-buscador { /*usamos display inline block porque queremos que esten pegaditos */
+body{
+padding:0;
+margin:0;
+background-color:black;
+}
+
+h2{
+font-size:100px;
+font-weight:500;
+color:#222;
+letter-spacing:3px;
+cursor:pointer;
+text-align:center;
+}
+
+h2 span{
+transition:0.5s;
+}
+
+h2:hover span:nth-child(1)
+{
+margin-right:10px;
+}
+
+h2:hover span:nth-child(2)
+{
+margin-left:40px;
+}
+h2:hover span{
+color:#fff;
+text-shadow:0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #fff,
+            0 0 80px #fff,
+             0 0 120px #fff;
+}
+
+
+.icon-buscador{ /*usamos display inline block porque queremos que esten pegaditos */
 
 display: inline-block;
 width: 24px;
@@ -13,13 +54,22 @@ height: 24px;
 
 
 
-#input-buscador{
 
+
+
+#input-buscador/*Ponerle estilo ala barra para escribir de adentro*/{
+
+background-color:transparent;
+width:450px;
+height:40px;
 border:none;
+outline:none;
+color:white;
+font-size:14px;
+border-radius:20px;
 
 
 }
- 
 
 #input-buscador:hover /*Sirve para que al pasar el mouse se vea el sombreado en la barra */{
 
@@ -34,7 +84,11 @@ border-radius:20px;
 width:650px;
 height:45px;
 border: 1px solid #dfe1e5;
+
+
 }
+
+
 
 
 .botones{
@@ -67,7 +121,7 @@ background-color:#f8f8f8;
 header ul li {
   display:inline;
   padding: 15px;
- 
+ color:white;
 }
 
 
@@ -76,13 +130,20 @@ width:100%;
 position:absolute;
 bottom:0;
 background: #f2f2f2;
+height:auto;
+padding: 10px 0;
+height:auto;
+
+
+background-color:black;
 }
 
 
  
 footer .bloque{
-padding:5px 0;
+
 border-bottom:1px solid #dadce0;
+
 }
 
 footer .bloque p{
@@ -97,7 +158,7 @@ display:flex;
 justify-content:space-between;
 width:95%;
 margin:auto;
-padding:10px 0;
+padding:5px 0;
 }
 
 footer .cuadro a{
@@ -115,14 +176,13 @@ text-decoration: underline;
 
 
 main{
-height: 100%;
+height: 28%;
 display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-height:26% ;
 text-align:center;
-padding:10px;
+padding:25px;
 
 }
 
@@ -133,20 +193,19 @@ padding:10px;
 padding: 10px;
 text-align: right;
 margin:10px;
+
+}
+
+.menu-icono{
+padding: 10px;
+text-align: right;
+margin:10px;
+
 }
 
 
 
 
-
-header .iconos .menu-icono{
-background-image: url("https://static.thenounproject.com/png/756729-200.png");
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
-width:25px;
-height:25px;
-}
 
 header .iconos .Foto-perfil{
 background-image: url("https://th.bing.com/th/id/OIP.I0xsw03j098OA-J-DKVMQQAAAA?pid=ImgDet&rs=1");
@@ -159,11 +218,6 @@ height:25px;
 
 
 
-
-
-
-
-
 /*
 
 align text
@@ -173,13 +227,3 @@ float
 unidades de medida
 
 */
-
-
-
-
-
-
-
-
-
-
